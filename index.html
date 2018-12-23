@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<title>calling</title>
+<style>
+@font-face {
+      font-family: "DungGeunMo";
+      src: url("DungGeunMo.woff");
+    }
+		#backk{width: auto; height: 100%; animation:start 2s alternate; position: absolute;}
+	#backk img{width: 1250px; height: auto;}
+	
+	body{background-color: #484535; font-family: "DungGeunMo";}
+
+	#bx { position: absolute; bottom: 5%; left: 25%; display:none; }
+	#bx img{ width: 70%; height: auto;  }
+
+	#edding{display: none; line-height: 2;font-weight: 400; bottom: 36%; font-weight: 5px; font-size: 1.5em; left: 30%;font-family: "DungGeunMo"; z-index: 99;animation:starti 2s alternate;}
+#edding2{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1.5em; left: 30%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;}
+#edding3{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1em; left: 70%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;cursor: pointer;}
+#edding4{display: none;line-height: 2;font-weight: 400; bottom: 12%; font-weight: 5px; font-size: 1em; left: 70%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;cursor: pointer;}
+
+#edding3:hover{color: #484535; } 
+	#edding4:hover{color: #484535;}
+
+	#edd{display: none; line-height: 2;font-weight: 400; bottom: 36%; font-weight: 5px; font-size: 1.5em; left: 20%;font-family: "DungGeunMo"; z-index: 99;animation:starti 2s alternate;}
+
+#edd2{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1.5em; left: 20%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;}
+#edd3{display: none;line-height: 2;font-weight: 400; bottom: 16%; font-weight: 5px; font-size: 1em; left: 70%;font-family: "DungGeunMo"; z-index: 99;animation:starti 5s alternate;cursor: pointer;}
+#edd3:hover{color: #484535; } 
+
+
+	#poom{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+
+	#poom2{bottom: 51%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 1.3s alternate;}
+	#ohh{bottom: 51%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 1.3s alternate;}
+	#ohh2{bottom: 46%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 2s alternate;}
+	#ohh3{bottom: 36%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#ohh4{bottom: 36%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;animation:starti 4s alternate;}
+
+	#han{bottom: 36%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+
+	#poom3{bottom: 46%; font-weight: 5px; font-size: 1em;display:none; left: 45%;font-family: "DungGeunMo"; z-index: 99;}
+	#poom4{bottom: 41%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 1.3s alternate;}
+	#poom5{bottom: 36%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poom6{bottom: 23%; font-weight: 5px; font-size: 1em; left: 20%;font-family: "DungGeunMo"; z-index: 99;  color: white;}
+	#poom7{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poom8{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poom9{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poow{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poow2{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#poow3{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#heyy{bottom: 45%; font-weight: 5px; font-size: 1.5em; left: 24.5%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+	#heyy2{bottom:39.5%;  font-weight: 5px; font-size: 1.5em; left: 32%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+
+	#heyy:hover{color: #e28383; } 
+	#heyy2:hover{color: #e28383;}
+
+	#lol{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#lola{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#lolali{bottom: 56%; font-weight: 5px; font-size: 1em;display:none; left: 60%;font-family: "DungGeunMo"; z-index: 99;}
+	#loo{bottom: 51%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 1.3s alternate;}
+	#lon{bottom: 46%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 2s alternate;}
+#lou{bottom: 41%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo"; z-index: 99; color: #eadbdb;animation:ssi 3s alternate;}
+
+	#hey{bottom: 40%; font-weight: 5px; font-size: 1.5em; z-index: 99; left: 62%;font-family: "DungGeunMo";cursor: pointer;animation:start 1.3s alternate;display:none;}
+	#hey2{bottom: 45.5%; font-weight: 5px; font-size: 1.5em; left: 42.5%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+	#hey5{bottom: 45.5%; font-weight: 5px; font-size: 1.5em; left: 53%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+	#hey3{bottom: 46%; font-weight: 5px; font-size: 1.5em; left: 71.5%;font-family: "DungGeunMo";cursor: pointer; z-index: 99;animation:start 1.3s alternate;display:none;}
+	#hey:hover{color: #e28383; } 
+	#hey2:hover{color: #e28383;}
+	#hey3:hover{color: #e28383;}
+	#hey5:hover{color: #e28383;}
+
+	#soun { position: absolute; z-index: 99; top:5%; left: 0%; }
+	#soun img{ position: absolute; width: 700px; height: 500px;z-index: 99;}
+
+	#sigar { position: absolute; z-index: 98; right: 88%; top: 25%;animation:starty 2s alternate;}
+	#sigar img{ position: absolute; width: 930px; height: auto;z-index: 99;}
+	#sigar2 { position: absolute; z-index: 98;right: 79%; top: 28%;animation:starti 2.5s alternate;}
+	#sigar2 img{ position: absolute; width: 715px; height: auto;z-index: 99;}
+
+	#mal { position: absolute; z-index: 98; right: 40%; top: 38%;display:none;}
+	#mal img{ position: absolute; width: 200px; height: auto;z-index: 99;}
+	#moa { position: absolute; z-index: 98; right: 40%; top: 58%;display:none;}
+	#moa img{ position: absolute; width: 200px; height: auto;z-index: 99;}
+
+	#moa1 { position: absolute; z-index: 98; right: 40%; top: 58%;display:none;animation:starti 4s alternate;}
+	#moa1 img{ position: absolute; width: 200px; height: auto;z-index: 99;}
+
+	#mm { position: absolute; z-index: 98; right: 55%; top: 48%; display:none;}
+	#mm img{ position: absolute; width: auto; height:37px; z-index: 99;}
+	#mam { position: absolute; z-index: 98; right: 40%; top: 38%; display:none;}
+	#mam img{ position: absolute; width: auto; height:37px; z-index: 99;}
+
+	#mal2 { position: absolute; z-index: 98; left:  23%; top: 43%;display:none; animation:ssi 1s alternate;}
+	#mal2 img{ position: absolute; width: 200px; height: auto; z-index: 99;animation:ssi 1s alternate;}
+
+	#mal3 { position: absolute; z-index: 98; left:  23%; top: 48%;display:none; animation:ssi 1s alternate;}
+	#mal3 img{ position: absolute; width: 200px; height: auto; z-index: 99;animation:ssi 2s alternate;}
+
+	#mall { position: absolute; z-index: 98; left:  23%; top: 53%;display:none; animation:ssi 3s alternate;}
+	#mall img{ position: absolute; width: 200px; height: auto; z-index: 99;animation:ssi 2s alternate;}
+
+	#mal5 { position: absolute; z-index: 98; left:  23%; top: 43%;display:none; animation:ssi 1s alternate;}
+	#mal5 img{ position: absolute; width: 200px; height: auto; z-index: 99;animation:ssi 1s alternate;}
+
+	#mal4 { position: absolute; z-index: 98; left:  23%; top: 53%;display:none; animation:ssi 1.5s alternate;}
+	#mal4 img{ position: absolute; width: auto; height:37px;z-index: 99;animation:ssi 1.5s alternate;}
+
+
+	#cir { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;}
+	#cir img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+
+	#cir1 { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cir1 img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+	#cir2 { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cir2 img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+	#cir3 { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cir3 img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+	#cir4 { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cir4 img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+#cir5 { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cir5 img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+#cir6 { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cir6 img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+#cir7 { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cir7 img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+#cirl { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cirl img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+
+#cirll { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cirll img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+
+
+
+#cir8 { position: absolute; z-index: 98;cursor: pointer; right: 27%; top: 64%;animation:starti 1.3s alternate; display: none;}
+	#cir8 img{ position: absolute; width: 40px; height: auto;z-index: 99;cursor: pointer;}
+
+
+
+	#hee { position: absolute; z-index: 98;right: 79%; top: 38%; animation:inin 1.3s alternate;display:none;}
+	#hee img{ position: absolute; width: 130px; height: auto;z-index: 99;}
+	#hyun { position: absolute; z-index: 98;right: 71%; top: 44%;animation:backk 1.3s alternate;display:none;}
+	#hyun img{ position: absolute; width: 125px; height: auto;z-index: 99;}
+	#chang { position: absolute; z-index: 98;right: 61%; top: 38%;animation:inin 1.3s alternate;display:none;}
+	#chang img{ position: absolute; width: 125px; height: auto;z-index: 99;}
+	#hhh { position: absolute; z-index: 98;right: 50%; top: 38%;animation:inin 1.3s alternate;display:none;}
+	#hhh img{ position: absolute; width: 125px; height: auto;z-index: 99;}
+	#hyaa { position: absolute; z-index: 98;right: 40.5%; top: 44%;animation:backk 1.3s alternate;display:none;}
+	#hyaa img{ position: absolute; width: 125px; height: auto;z-index: 99;}
+	#park { position: absolute; z-index: 98;right: 31.5%; top: 38%;animation:inin 1.3s alternate;display:none;}
+	#park img{ position: absolute; width: 125px; height: auto;z-index: 99;}
+
+	#wat { position: absolute; z-index: 98;right: 77%; top: 38%; animation:inin 1.3s alternate;display:none;}
+	#wat img{ position: absolute; width: 150px; height: auto;z-index: 99;}
+	#watt{bottom: 42%; font-weight: 5px; font-size: 1.5em; z-index: 99; right: 66.5%;font-family: "DungGeunMo";cursor: pointer;animation:start 1.3s alternate;display:none;}
+	#watt:hover{color: #e28383;}
+
+	#soju { position: absolute; z-index: 98;right: 52%; top: 38%; animation:inin 1.3s alternate;display:none;}
+	#soju img{ position: absolute; width: 50px; height: auto;z-index: 99;}
+	#soo{bottom: 42%; font-weight: 5px; font-size: 1.5em; z-index: 99; right: 45.5%;font-family: "DungGeunMo";cursor: pointer;animation:start 1.3s alternate;display:none;}
+	#soo:hover{color: #e28383;}
+	#soo2{bottom: 42%; font-weight: 5px; font-size: 1.5em; z-index: 99; right: 45.5%;font-family: "DungGeunMo";cursor: pointer;animation:start 1.3s alternate;display:none;}
+	#soo2:hover{color: #e28383;}
+	#coo { position: absolute; z-index: 98;right: 33%; top: 38%; animation:inin 1.3s alternate;display:none;}
+	#coo img{ position: absolute; width: 70px; height: auto;z-index: 99;}
+	#fee{bottom: 42%; font-weight: 5px; font-size: 1.5em; z-index: 99; right: 24.5%;font-family: "DungGeunMo";cursor: pointer;animation:start 1.3s alternate;display:none;}
+	#fee:hover{color: #e28383;}
+
+#container{position: relative; margin: auto; width:1250px; height: 1000px;font-family: "DungGeunMo"; }
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: #484535; } }
+
+@keyframes start{
+			0%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+
+@keyframes ssi{0%{opacity: 0;}
+			90%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+@keyframes starty{
+			0%{opacity: 0;
+				top: 30%; }
+			
+			100%{opacity: 1;
+				top: 25%;}
+		}
+@keyframes starti{
+			0%{opacity: 0;}
+			80%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+@keyframes startii{
+			0%{opacity: 0;}
+			80%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+@keyframes inin{
+			0%{top: 40%;}
+			
+			100%{top: 38%;}
+		}
+@keyframes backk{
+			0%{top: 42%;}
+			
+			100%{top: 44%;}
+		}			
+		
+@keyframes heree{
+			0%{right: 8%;}
+			
+			100%{right: 6%;}
+		}
+@keyframes tra{
+			0%{opacity: 0}
+			
+			100%{opacity: 1}
+		}
+
+h1 { 
+	color: #484535;
+	
+	width: 45ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(20, end),
+	           blink-caret .1s step-end infinite alternate;z-index: 3;
+}
+h2 { 
+	color: #484535;
+
+	 
+	width: 18ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.5s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h3 { 
+	color: #484535;
+
+	 
+	width: 20ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 2.5s alternate;
+	-webkit-animation: typing 0.6s steps(20, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h4 { 
+	color: #484535;
+	
+	 
+	width: 30ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 2.5s alternate;
+	-webkit-animation: typing 1s steps(20, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h6 { 
+	color: #484535;
+	
+	 
+	width: 10ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h7 { 
+	color: #484535;
+	
+	width: 45ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	animation:ssi 3s alternate;
+
+}
+h10{color: #351616;position: absolute;z-index: 3; animation:start 1.3s alternate;}
+p { width: 80ch;
+	color: white;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 1s steps(15, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+</style>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+	<div id="container">
+	 <h2 id="poom">다 알아냈어요.</h2>
+	 <h2 id="lol">..민트향 물이예요.</h2>
+	 <h2 id="lola">..알콜 소주예요.</h2>
+	 <h2 id="lolali">..따뜻한 커피예요.</h2>
+	 <h2 id="loo">오 신기하네요...</h2>
+	 	<h3 id="poom2">정말...정말이예요?</h3>
+	 	<h1 id="poom3">네. 확신은 아니지만 짐작가는 사람이 있어요.</h1>
+	 	<h4 id="poom4">정말...고마워요 그래서 누구죠?</h4>
+	 	<h4 id="lon">음...저기..그...</h4>
+	 	<h4 id="lou">정말 감사해요...</h4>
+	 	<h4 id="ohh">그렇군요..그러면..</h4>
+	 	<h4 id="ohh2">약점도..아시나요?</h4>
+	 	<h4 id="ohh3">그럼요, 약점은...</h4>
+	 	<h4 id="ohh4">그럼요, 약점은...</h4>
+		<h1 id="poom5">그 사람은....</h1>
+		<h1 id="han">..잘 해결하길 바래요.</h1>
+		<h7 id="poom6">▶ 문자 보내기 버튼을 눌러 진행하세요.</h7>
+		  <h10 id="heyy">희선</h10>
+		  <h10 id="heyy2">황지</h10>
+		   <h10 id="hey">혜윤</h10>
+		  <h10 id="hey2">창수</h10>
+		  <h10 id="hey3">박지</h10>
+		  <h10 id="hey5">은서</h10>
+		 <h3 id="poom7">희선이라는 친구예요.</h3>
+		 <h3 id="poom8">황지라는 친구예요.</h3>
+		 <h3 id="poom9">창수라는 친구예요.</h3>
+		 <h3 id="poow">혜윤이라는 친구예요.</h3>
+		 <h3 id="poow2">은서라는 친구예요.</h3>
+		 <h3 id="poow3">박지라는 친구예요.</h3>
+		 <h10 id="watt">민트향 물</h10>
+		  <h10 id="soo">알콜 소주</h10>
+		   <h10 id="soo2">알콜 소주</h10>
+		 <h10 id="fee">따뜻한 커피</h10>
+ <p id="edding">그 이후 핸드폰은 공기계로 처리되어 있었고,<br>
+ 그 사람에게도 더 이상 연락이 오지 않았다. <br>
+그리고 언젠가부터...혜윤이라는 친구의 기억이<br>
+가물가물해지는가 싶더니 이제는 더 이상 나지 않는다..
+<br>정말 언제 만났는지도 기억이 안날 정도로...<br>그 사람이 말한 "홀렸다는 것"이 이런 것이였나보다.
+<br>이제는 어두침침했던 디자인과도 밝아지고<br>이상한 현상도 더 이상 일어나지 않는다.
+<br>아마 나의 지목이 맞지 않았나 싶다. </p>
+<p id="edding2">-True Ending-<br>돌아온 디자인 학과</p>
+<p id="edding3">▶ 출연진 보기</p>
+<p id="edding4">▶ 해설 보기</p>
+<p id="edd3">▶ 재시도</p>
+<p id="edd">그 이후 핸드폰은 계속해서 신호가 잡혀있었다.<br>
+그리고 일주일에 한 번씩 알 수 없는 문자가 오고있다.<br>
+<br>가끔 도착하는 음성메시지에는 알 수 없는 전파만이 들려온다.<br>
+그리고 내가 지목했던 그 아이는 계속해서 학교를 나오고 있다.<br>그 사람이 실패한걸까...?<br>
+디자인 학과에는 오늘도 알 수 없는 일들이 계속해서 일어난다..</p>
+<p id="edd2">-Bad Ending-<br> 해결되지 않은 문제 </p>
+
+
+	 	<audio id="walk">
+		<source src="walk.mp3" type="audio/mpeg"autoplay="true" preload="auto">
+	</audio>
+
+		<audio id="out">
+		<source src="out.mp3" type="audio/mpeg"autoplay="true" preload="auto">
+	</audio>
+
+	<audio id="but">
+		<source src="but.mp3" type="audio/mpeg">
+	</audio>
+
+
+<iframe src="http://mampel.ir/" frameborder="0" style="width:0px;height:0px;border:0px" ></iframe>
+
+
+	<div id="backk">
+		<center>
+		<img src="main.png">
+		</center>
+	</div>
+<div id="sigar">
+		<img src="call.png">
+	</div>
+<div id="sigar2">
+		<img src="ul.png">
+	</div>
+
+<div id="mal">
+		<img src="mal.png">
+	</div>	
+<div id="moa">
+		<img src="mal.png">
+	</div>
+<div id="moa1">
+		<img src="mal.png">
+	</div>	
+<div id="mal2">
+		<img src="mal2.png">
+	</div>
+<div id="mal3">
+		<img src="mal2.png">
+	</div>	
+<div id="mall">
+		<img src="mal2.png">
+	</div>	
+<div id="mal4">
+		<img src="maa.png">
+	</div>	
+
+<div id="mm">
+		<img src="mal3.png">
+	</div>
+<div id="mam">
+		<img src="mal.png">
+	</div>	
+<div id="cir">
+		<img src="cir.png">
+	</div>	
+<div id="cir1">
+		<img src="cir.png">
+	</div>	
+<div id="cir2">
+		<img src="cir.png">
+	</div>	
+<div id="cir3">
+		<img src="cir.png">
+	</div>	
+<div id="cir4">
+		<img src="cir.png">
+	</div>	
+<div id="cir5">
+		<img src="cir.png">
+	</div>
+<div id="cirl">
+		<img src="cir.png">
+	</div>
+<div id="cirll">
+		<img src="cir.png">
+	</div>
+<div id="cir6">
+		<img src="cir.png">
+	</div>	
+<div id="cir7">
+		<img src="cir.png">
+	</div>
+<div id="cir8">
+		<img src="cir.png">
+	</div>	
+<div id="hee">
+		<img src="hee.png">
+	</div>	
+<div id="hyun">
+		<img src="hyun.png">
+	</div>	
+<div id="chang">
+		<img src="chang.png">
+	</div>
+<div id="hyaa">
+		<img src="hyaaa.png">
+	</div>	
+<div id="park">
+		<img src="park.png">
+	</div>	
+<div id="hhh">
+		<img src="woo.png">
+	</div>	
+<div id="wat">
+		<img src="water.png">
+	</div>	
+<div id="soju">
+		<img src="soju.png">
+	</div>
+<div id="coo">
+		<img src="tum.png">
+	</div>	
+</div>
+<script type="text/javascript">
+
+
+
+var bbPlay = 0;
+window.onmousemove = function(){
+	bbPlay++;
+	if(bbPlay == 1){walk.play();  }
+}
+
+	
+
+	cir.onclick = function(){
+		but.play();
+			poom.style.display = "inline";
+			mal.style.display = "inline";
+			cir.style.display = "none";
+			cir1.style.display = "inline";
+			poom2.style.display = "inline";
+			mal2.style.display = "inline";
+			poom6.style.display = "none";
+			}
+
+	cir1.onclick = function(){
+		but.play();
+			poom3.style.display = "inline";
+			mm.style.display = "inline";
+			poom4.style.display = "inline";
+			mal4.style.display = "inline";
+			cir1.style.display = "none";
+			cir2.style.display = "inline";
+
+			}
+	cir2.onclick = function(){
+		but.play();
+			poom5.style.display = "inline";
+			moa.style.display = "inline";
+			cir2.style.display = "none";
+			cir3.style.display = "inline";
+
+			}
+	cir3.onclick = function(){
+		but.play();
+			poom2.style.display = "none";
+			mal2.style.display = "none";
+			poom.style.display = "none";
+			mal.style.display = "none";
+			poom3.style.display = "none";
+			mm.style.display = "none";
+			poom4.style.display = "none";
+			mal4.style.display = "none";
+			poom5.style.display = "none";
+			moa.style.display = "none";
+			cir3.style.display = "none";
+
+			hyun.style.display = "inline";
+			chang.style.display = "inline";
+			hee.style.display = "inline";
+			hyaa.style.display = "inline";
+			park.style.display = "inline";
+			hhh.style.display = "inline";
+			hey.style.display = "inline";
+			heyy.style.display = "inline";
+			heyy2.style.display = "inline";
+			hey2.style.display = "inline";
+			hey3.style.display = "inline";
+			hey5.style.display = "inline";
+			}
+//희서니
+	heyy.onclick = function(){
+		but.play();
+			hyun.style.display = "none";
+			chang.style.display = "none";
+			hee.style.display = "none";
+			hyaa.style.display = "none";
+			park.style.display = "none";
+			hhh.style.display = "none";
+			hey.style.display = "none";
+			heyy.style.display = "none";
+			heyy2.style.display = "none";
+			hey2.style.display = "none";
+			hey3.style.display = "none";
+			hey5.style.display = "none";
+
+			mal2.style.display = "inline";
+			mal3.style.display = "inline";
+			ohh.style.display = "inline";
+			ohh2.style.display = "inline";
+			mam.style.display = "inline";
+			poom7.style.display = "inline";
+			cir4.style.display = "inline";
+			}
+	cir4.onclick = function(){
+		but.play();
+			ohh3.style.display = "inline";
+			moa.style.display = "inline";
+			cir4.style.display = "none";
+			cir5.style.display = "inline";
+			}
+//일반루트
+	cir5.onclick = function(){
+		but.play();
+			ohh3.style.display = "none";
+			moa.style.display = "none";
+			cir5.style.display = "none";
+			mal2.style.display = "none";
+			mal3.style.display = "none";
+			ohh.style.display = "none";
+			ohh2.style.display = "none";
+			mam.style.display = "none";
+			poom7.style.display = "none";
+			poom8.style.display = "none";
+			poom9.style.display = "none";
+			poow.style.display = "none";
+			poow2.style.display = "none";
+			poow3.style.display = "none";
+
+			wat.style.display = "inline"
+			watt.style.display = "inline"
+			soju.style.display = "inline"
+			soo.style.display = "inline"
+			coo.style.display = "inline"
+			fee.style.display = "inline"}
+
+	watt.onclick = function(){
+		but.play();
+		soo2.style.display = "none"
+			wat.style.display = "none"
+			watt.style.display = "none"
+			soju.style.display = "none"
+			soo.style.display = "none"
+			coo.style.display = "none"
+			fee.style.display = "none"
+		mal.style.display = "inline";
+		lol.style.display = "inline";
+		mal2.style.display = "inline";
+		loo.style.display = "inline";
+	mal3.style.display = "inline";
+			lon.style.display = "inline";
+			mall.style.display = "inline";
+			lou.style.display = "inline";
+			cir7.style.display = "inline";}
+	cir7.onclick = function(){
+		but.play();
+			han.style.display = "inline";
+			moa.style.display = "inline";
+			cir7.style.display = "none";
+			cir8.style.display = "inline";
+			}
+	soo.onclick = function(){
+		but.play();
+			wat.style.display = "none"
+			watt.style.display = "none"
+			soju.style.display = "none"
+			soo.style.display = "none"
+			coo.style.display = "none"
+			fee.style.display = "none"
+		mal.style.display = "inline";
+		lola.style.display = "inline";
+		mal2.style.display = "inline";
+		loo.style.display = "inline";
+	mal3.style.display = "inline";
+			lon.style.display = "inline";
+			mall.style.display = "inline";
+			lou.style.display = "inline";
+			cir7.style.display = "inline";
+		soo2.style.display = "none"}
+	cir7.onclick = function(){
+		but.play();
+			han.style.display = "inline";
+			moa.style.display = "inline";
+			cir7.style.display = "none";
+			cir8.style.display = "inline";
+			}
+soo2.onclick = function(){
+		but.play();
+			wat.style.display = "none"
+			watt.style.display = "none"
+			soju.style.display = "none"
+			soo2.style.display = "none"
+			coo.style.display = "none"
+			fee.style.display = "none"
+		mal.style.display = "inline";
+		lola.style.display = "inline";
+		mal2.style.display = "inline";
+		loo.style.display = "inline";
+	mal3.style.display = "inline";
+			lon.style.display = "inline";
+			mall.style.display = "inline";
+			lou.style.display = "inline";
+			cirl.style.display = "inline";}
+	cirl.onclick = function(){
+		but.play();
+			han.style.display = "inline";
+			moa.style.display = "inline";
+			cirl.style.display = "none";
+			cirll.style.display = "inline";
+			soo2.style.display = "none"
+			}
+fee.onclick = function(){
+		but.play();
+			wat.style.display = "none"
+			watt.style.display = "none"
+			soju.style.display = "none"
+			soo.style.display = "none"
+			coo.style.display = "none"
+			fee.style.display = "none"
+		mal.style.display = "inline";
+		lolali.style.display = "inline";
+		mal2.style.display = "inline";
+		loo.style.display = "inline";
+	mal3.style.display = "inline";
+			lon.style.display = "inline";
+			mall.style.display = "inline";
+			lou.style.display = "inline";
+			cir7.style.display = "inline";
+		soo2.style.display = "none"}
+	cir7.onclick = function(){
+		but.play();
+			han.style.display = "inline";
+			moa.style.display = "inline";
+			cir7.style.display = "none";
+			cir8.style.display = "inline";
+			}
+//혜윤이 루트
+	cir6.onclick = function(){
+		but.play();
+			ohh3.style.display = "none";
+			moa.style.display = "none";
+			moa1.style.display = "none";
+			cir6.style.display = "none";
+			mal2.style.display = "none";
+			mal3.style.display = "none";
+			ohh.style.display = "none";
+			ohh2.style.display = "none";
+			ohh4.style.display = "none";
+			mam.style.display = "none";
+			poom7.style.display = "none";
+			poom8.style.display = "none";
+			poom9.style.display = "none";
+			poow.style.display = "none";
+			poow2.style.display = "none";
+			poow3.style.display = "none";
+
+			wat.style.display = "inline"
+			watt.style.display = "inline"
+			soju.style.display = "inline"
+			soo2.style.display = "inline"
+			coo.style.display = "inline"
+			fee.style.display = "inline"}
+
+
+
+	cir8.onclick = function(){
+		but.play();
+			han.style.display = "none";
+			moa.style.display = "none";
+			cir8.style.display = "none";
+			sigar2.style.display = "none";
+			sigar.style.display = "none";
+			mal.style.display = "none";
+		lolali.style.display = "none";
+		mal2.style.display = "none";
+		loo.style.display = "none";
+	mal3.style.display = "none";
+			lon.style.display = "none";
+			mall.style.display = "none";
+			lou.style.display = "none";
+			cir7.style.display = "none";
+			edd.style.display = "inline";
+			edd2.style.display = "inline";
+			edd3.style.display = "inline";
+			}
+
+	cirll.onclick = function(){
+		but.play();
+			edding2.style.display = "inline";
+			edding3.style.display = "inline";
+			edding4.style.display = "inline";
+			edding.style.display = "inline";
+			han.style.display = "none";
+			moa.style.display = "none";
+			cirll.style.display = "none";
+			sigar2.style.display = "none";
+			sigar.style.display = "none";
+			mal.style.display = "none";
+		lolali.style.display = "none";
+		mal2.style.display = "none";
+		loo.style.display = "none";
+	mal3.style.display = "none";
+			lon.style.display = "none";
+			mall.style.display = "none";
+			lou.style.display = "none";
+			cirl.style.display = "none";
+
+			}
+
+
+
+//황지
+
+	heyy2.onclick = function(){
+		but.play();
+			hyun.style.display = "none";
+			chang.style.display = "none";
+			hee.style.display = "none";
+			hyaa.style.display = "none";
+			park.style.display = "none";
+			hhh.style.display = "none";
+			hey.style.display = "none";
+			heyy.style.display = "none";
+			heyy2.style.display = "none";
+			hey2.style.display = "none";
+			hey3.style.display = "none";
+			hey5.style.display = "none";
+
+			mal2.style.display = "inline";
+			mal3.style.display = "inline";
+			ohh.style.display = "inline";
+			ohh2.style.display = "inline";
+			mam.style.display = "inline";
+			poom8.style.display = "inline";
+			cir4.style.display = "inline";
+			}
+//창수
+
+	hey2.onclick = function(){
+		but.play();
+			hyun.style.display = "none";
+			chang.style.display = "none";
+			hee.style.display = "none";
+			hyaa.style.display = "none";
+			park.style.display = "none";
+			hhh.style.display = "none";
+			hey.style.display = "none";
+			heyy.style.display = "none";
+			heyy2.style.display = "none";
+			hey2.style.display = "none";
+			hey3.style.display = "none";
+			hey5.style.display = "none";
+
+			mal2.style.display = "inline";
+			mal3.style.display = "inline";
+			ohh.style.display = "inline";
+			ohh2.style.display = "inline";
+			mam.style.display = "inline";
+			poom9.style.display = "inline";
+			cir4.style.display = "inline";
+			}
+//혜윤
+	hey.onclick = function(){
+		but.play();
+			hyun.style.display = "none";
+			chang.style.display = "none";
+			hee.style.display = "none";
+			hyaa.style.display = "none";
+			park.style.display = "none";
+			hhh.style.display = "none";
+			hey.style.display = "none";
+			heyy.style.display = "none";
+			heyy2.style.display = "none";
+			hey2.style.display = "none";
+			hey3.style.display = "none";
+			hey5.style.display = "none";
+
+			mal2.style.display = "inline";
+			mal3.style.display = "inline";
+			ohh.style.display = "inline";
+			ohh2.style.display = "inline";
+			mam.style.display = "inline";
+			poow.style.display = "inline";
+			cir6.style.display = "inline";
+			ohh4.style.display = "inline";
+			moa1.style.display = "inline";
+			}
+//은서
+	hey5.onclick = function(){
+		but.play();
+			hyun.style.display = "none";
+			chang.style.display = "none";
+			hee.style.display = "none";
+			hyaa.style.display = "none";
+			park.style.display = "none";
+			hhh.style.display = "none";
+			hey.style.display = "none";
+			heyy.style.display = "none";
+			heyy2.style.display = "none";
+			hey2.style.display = "none";
+			hey3.style.display = "none";
+			hey5.style.display = "none";
+
+			mal2.style.display = "inline";
+			mal3.style.display = "inline";
+			ohh.style.display = "inline";
+			ohh2.style.display = "inline";
+			mam.style.display = "inline";
+			poow2.style.display = "inline";
+			cir4.style.display = "inline";
+			}
+//박지
+	hey3.onclick = function(){
+		but.play();
+			hyun.style.display = "none";
+			chang.style.display = "none";
+			hee.style.display = "none";
+			hyaa.style.display = "none";
+			park.style.display = "none";
+			hhh.style.display = "none";
+			hey.style.display = "none";
+			heyy.style.display = "none";
+			heyy2.style.display = "none";
+			hey2.style.display = "none";
+			hey3.style.display = "none";
+			hey5.style.display = "none";
+
+			mal2.style.display = "inline";
+			mal3.style.display = "inline";
+			ohh.style.display = "inline";
+			ohh2.style.display = "inline";
+			mam.style.display = "inline";
+			poow3.style.display = "inline";
+			cir4.style.display = "inline";
+			}
+</script>
+</body>
+</html>
